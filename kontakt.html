@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="billetpriser.html">Billet og Service</a></li>
+        <li><a href="historie.html">Historie</a></li>
+    </ul>
+    <div class="page-container">
+        <div class="content-wrap">
+            <a href="index.html"><img src="bonbonland.jpeg" style="width:15%"></a>
+            
+            <h1>Kontakt</h1>
+            
+                <p>
+                    <div class="paragraph">
+                    Du kan kontakte os på telefon + 45 55 53 07 00 alle hverdage mellem 9-15, samt i weekenden mellem 11-15 når parken er åben, 
+                    eller du kan sende os en mail direkt (post@bonbonland.dk), ved at udfylde nedenstående formular.
+                    <br><br>Du finder os på Gartnervej 2, 4684 Holmegaard.
+                </div>
+                </p>
+            
+            <form id="kontakt" onsubmit="return check()">
+                <fieldset>
+                    <legend>Kontakt Form</legend>
+                    <label for="navn">Navn (mindre end 10 karakterer)</label><br>
+                    <input type="text" id="navn" name="navn"><br>
+                    <label for="telefon">Telefon (i DK)</label><br>
+                    <input type="number" id="telefon" name="telefon"><br>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="male" name="gender" value="male"><br>
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="female" name="gender" value="female"><br>
+                    <label for="other">Other</label><br>
+                    <input type="radio" id="other" name="gender" value="other"><br>
+                    <label for="hårfarve">Henvendelse Om</label><br>
+                    <select id="henvendelse">
+                        <option value="Pris">Pris</option>
+                        <option value="Information">General Information</option>
+                        <option value="Rebook/Cancel">Genbestilling / Annuler</option>
+                        <option value="Other">Andet</option>
+                    </select><br>
+                    <label for="description">Beskrivelse</label><br>
+                    
+                    <textarea rows="4" cols="50" name="comment" form="kontakt">
+                        Enter text here...</textarea><br><br>
+                        <input type="submit" value="Submit"> 
+                    </fieldset>   
+                </form>
+                <br>
+            </div>
+            <footer class="footer">
+                ©Ansar_BonBonLand2021<br>
+                <a href="mailto:mdansarul_haque@yahoo.com">mdansarul_haque@yahoo.com</a>
+            </footer>
+        </div>
+        <script src="inputcheck.js"></script> 
+    </body>
+    </html>
